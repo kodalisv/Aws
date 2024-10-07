@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <style type='text/css'>
+        body {
+            color: #000000;
+            background-color: #ffffff;
+            font-family: Arial, Verdana, sans-serif;
+            font-size: 12pt;
+            background-image: url('bg1.jpg');
+        }
+        fieldset {
+            font-size: 12px;
+            padding: 10px;
+            border: 1px solid black; /* Corrected border color */
+            width: 400px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+        label:hover {
+            cursor: pointer; /* Corrected cursor value */
+        }
+        button {
+            font-size: 10pt;
+            color: white;
+            background-color: green;
+            border: 2px solid #336600;
+            padding: 9px;
+        }
+    </style>
+</head>
+<body>
+    <br><br>
+    <fieldset>
+        <div align="center">
+            <div><h1>Sign up</h1></div>
+            <div>
+                <form action="{{url_for('registration')}}" method="POST" enctype="multipart/form-data">
+                    <div>{{ message }}</div><br><br>
+                    <label for="username">User ID : </label><input id="username" name="username" type="text" placeholder="User Name" autocomplete="off"/> <br><br>
+                    <label for="password">Password : </label><input id="password" name="password" type="password" placeholder="Password" autocomplete="off"/> <br><br>
+                    <label for="firstname">First Name : </label><input id="firstname" name="firstname" type="text" placeholder="First Name" autocomplete="off"/> <br><br>
+                    <label for="lastname">Last Name : </label><input id="lastname" name="lastname" type="text" placeholder="Last Name" autocomplete="off"/> <br><br>
+					<label for="email">Email : </label><input id="email" name="email" type="text" placeholder="Email" autocomplete="off"/> <br><br>
+                    <button id="submitBtn" name="submitBtn">Confirm</button>
+                </form>
+            </div>
+            <p>Already a User? Click here to <a href="{{url_for('login')}}">Sign in</a></p>
+        </div>
+    </fieldset>
+</body>
+</html>
