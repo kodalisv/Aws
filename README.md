@@ -4,13 +4,13 @@
 
 This project demonstrates deploying a **Flask web application** on an **AWS EC2 instance** using **Apache2 with mod_wsgi**, and integrating a **SQLite3 database** for user registration and information retrieval.
 
-### EC2 Instance Setup
+#EC2 Instance Setup
 
 - Launched a free-tier eligible **Ubuntu Server 24.04 LTS** EC2 instance.
 - Created and used a secure **key pair** for SSH access.
 - Configured **security groups** to allow HTTP (port 80) and SSH (port 22).
 
-### Web Server & Database Configuration 
+#Web Server & Database Configuration 
 
 - Installed and configured:
   - **Apache2**
@@ -23,23 +23,23 @@ This project demonstrates deploying a **Flask web application** on an **AWS EC2 
   - A SQLite3 table creation and insertion
   - Apache virtual host setup to serve the app via mod_wsgi
 
-### Interactive Web Page Features 
+#Interactive Web Page Features 
 
-#### a.Registration Page 
+#a.Registration Page 
 - Collects:
   - Username
   - Password
 
-#### b.User Details 
+#b.User Details 
 - Collects:
   - First Name
   - Last Name
   - Email
 
-#### c. Submission Redirect 
+#c. Submission Redirect 
 - Redirects to profile page upon registration
 - Displays user information
 
-#### d. Login for Retrieval 
+#d. Login for Retrieval 
 - Allows user to enter **username & password**
 - Displays saved information from the database
