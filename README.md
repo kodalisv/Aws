@@ -1,6 +1,6 @@
-# Flask Web App on AWS EC2 - Registration and SQLite3 Integration
+#Flask Web App on AWS EC2 - Registration and SQLite3 Integration
 
-## Project Overview
+#Project Overview
 
 This project demonstrates deploying a **Flask web application** on an **AWS EC2 instance** using **Apache2 with mod_wsgi**, and integrating a **SQLite3 database** for user registration and information retrieval.
 
